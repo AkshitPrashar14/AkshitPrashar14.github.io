@@ -182,7 +182,7 @@
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
             try {
-                const response = await fetch('http://localhost:8000/chat', {
+                const response = await fetch('https://portfolio-chatbot-api-htnq.onrender.com/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: userText })
